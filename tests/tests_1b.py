@@ -4,7 +4,9 @@ tests_1b.py
 This module contains unit tests for the simple_calculator function defined in lab_1b.py.
 """
 
+import sys, os
 import pytest
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 from labs.lab_1.lab_1b import simple_calculator
 
 def test_addition():
